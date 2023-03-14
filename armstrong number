@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);    
+int n=sc.nextInt(); 
+String s=Integer.toString(n);
+int temp=n;
+int a;
+int b=0;
+int c=0;
+for(int i=1;i<=s.length();i++)
+{
+b=temp+b;
+a=b%10;
+b=b/10;
+temp=0;
+c=c+(int)Math.pow(a,s.length());
+
+}
+if(n==c){
+System.out.println("This is a armstrong number");    
+}
+else{
+ System.out.println("This is not a armstrong number");    
+   
+}
+}    
+}
